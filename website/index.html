@@ -1,1 +1,86 @@
+<!DOCTYPE html>
+<html>
 
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Website</title>
+    <link rel="Stylesheet" href="Website.css">
+    <link rel="icon" href="logo peaky.png" />
+    <script src="https://kit.fontawesome.com/b13e507b6c.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="background">
+        <nav id="navbar">
+            <img src="logo peaky.png" class="logo">
+            <ul id="settings">
+                <li><a href="">HOME</a></li>
+                <li><a href="">ABOUT ME</a></li>
+                <li><a href="">PORTFOLIO</a></li>
+                <li><a href="">SERVICES</a></li>
+                <li><a href="">CONTACT</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="content">
+        <h4>Hello, My Name is </h4>
+        <h1>Michael Martinez</h1>
+        <h3>I am a Web Developer</h3>
+        <div class="newslatter">
+            <form>
+                <input type="email" name="Email" id="mail" placeholder="Let's Be Friends">
+                <input type="submit" name="submit" value="Add Email">
+            </form>
+        </div>
+    </div>
+
+    <!----about section start---->
+    <section class="about">
+        <div class="main">
+            <img src="../html/tommy.jpg">
+            <div class="abt">
+                <h2>Who I am</h2>
+                <h5>Developer & Network Specialist</h5>
+                <p>I am Thomas Michael ‘Tommy’ Shelby is the son of Arthur and Mrs Shelby, brother of Arthur,
+                    John, Ada and Finn Shelby, father of Charles and Ruby Shelby, as well as being the husband of Grace
+                    and Lizzie Shelby.
+                    He is the leader of the Birmingham criminal gang, the Peaky Blinders and the patriarch of the Shelby
+                    Family.</p>
+            </div>
+        </div>
+
+        <!------Contant Me------>
+        <div class="contactme">
+            <p>Wanna Hire Me?</p>
+            <a target="_blank" class="Button" href="https://www.canva.com/design/DAEy2FvBZQw/IHUO9tCcwxv76Qg0pYAuDw/edit"><span></span>Download CV</a>
+        </div>
+
+        <!------Footer Start--------->
+        <footer>
+            <p>Tommy Shelby</p>
+            <P>For more Question, Follow me!</P>
+            <div class="Social">
+                <a target="_blank" href="https://www.facebook.com/jhonemarss/"><i class="fab fa-facebook"></i></a>
+                <a target="_blank" href="https://www.instagram.com/jhonemarss/"><i class="fab fa-instagram"></i></a>
+                <a target="_blank" href="michaelmartinez5577@gmail.com"><i class="fas fa-envelope-open-text"></i></a>
+            </div>
+        </footer>
+    </section>
+
+    <script>
+        var navbar = document.getElementById("navbar");
+        var settings = document.getElementById("settings");
+
+        window.onscroll = function () {
+            if (window.pageYOffset >= settings.offsetTop) {
+                navbar.classList.add("sticky");
+            }
+            else {
+                navbar.classList.remove("sticky");
+            }
+        }
+
+    </script>
+</body>
+
+</html>
